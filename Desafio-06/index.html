@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- <link rel="stylesheet" href="css/estilo_urbano.css"> -->
+    <!-- <link rel="stylesheet" href="css/estilo_retro.css"> -->
+    <title>desafio-06-formularios-html-y-css</title>
+</head>
+
+<body>
+    <H1>Vení al Gym! 💪🏻</H1>
+
+    <form>
+        <fieldset class="first-field">
+            <legend>🙋🏼‍♂️ Datos Personales 👀</legend>
+
+            <label for="nombre">Nombre:*</label>
+            <input id="nombre" type="text">
+            <br>
+            <label for="apellido">Apellido:*</label>
+            <input id="apellido" type="text" required>
+            <br>
+            <label for="documento">Documento:*</label>
+            <input id="documento" type="text" required>
+            <br>
+            <label for="nacionalidad">Nacionalidad:*</label>
+            <select name="nacionalidad" id="nacionalidad" required>
+                <option value="" selected>- Seleccionar -</option>
+                <option value="arg">Argentina</option>
+                <option value="bra">Brasileña</option>
+                <option value="ur">Uruguaya</option>
+                <option value="otra">Otra</option>
+            </select>
+            <br>
+            <label for="area">Contanos un poco de vos...</label>
+            <textarea id="area" name="area" cols="70" rows="10"></textarea>
+            <br>
+            <label>Sexo:*</label>
+            <br>
+            <div>
+                <input name="sexo" type="radio" id="radio_f" checked>
+                <label for="radio_f">Femenino</label>
+                <input name="sexo" type="radio" id="radio_m">
+                <label for="radio_m">Masculino</label>
+                <input name="sexo" type="radio" id="radio_o">
+                <label for="radio_o">Otro</label>
+            </div>
+
+        </fieldset>
+        <hr>
+        <fieldset class="second-field">
+            <legend>📱 Datos de Contacto 📧</legend>
+            <label for="teléfono">Teléfono:</label>
+            <input id="teléfono" type="text" placeholder="Código de área y número">
+
+            <br>
+            <label for="email">Dirección de correo electrónico:*</label>
+            <input id="email" type="email" required placeholder="Ej: mail@gmail.com">
+            <br>
+
+        </fieldset>
+
+        <hr>
+        <fieldset class="third-field">
+            <legend>🚴 Actividades 🤸‍♂️</legend>
+            <p>Por favor, indíca cuáles actividades te interesan.</p>
+
+            <p>Sede Palermo:</p>
+            <div class="activitis">
+                <input type="checkbox" name="chck_palermo" id="pal_basquet"><label for="pal_basquet">Básquet</label>
+                <input type="checkbox" name="chck_palermo" id="pal_boxeo"><label for="pal_boxeo">Boxeo</label>
+                <input type="checkbox" name="chck_palermo" id="pal_futbol"><label for="pal_futbol">Fútbol</label>
+                <input type="checkbox" name="chck_palermo" id="pal_tenis"><label for="pal_tenis">Tenis</label>
+            </div>
+
+            <br>
+
+            <p>Sede Rosario:</p>
+            <div class="activitis">
+                <input type="checkbox" name="chck_rosario" id="ros_basquet"><label for="ros_basquet">Básquet</label>
+                <input type="checkbox" name="chck_rosario" id="ros_futbol"><label for="ros_futbol">Fútbol</label>
+                <input type="checkbox" name="chck_rosario" id="ros_rugby"><label for="ros_rugby">Rugby</label>
+                <input type="checkbox" name="chck_rosario" id="ros_voley"><label for="ros_voley">Voley</label>
+            </div>
+        </fieldset>
+
+        <input type="checkbox" name="condiciones" id="chck_cond" required>
+        <label for="chck_cond">Acepto las condiciones*</label>
+        <br>
+        <input type="checkbox" name="novedades" id="chck_nov" checked>
+        <label for="chck_nov">Deseo recibir novedades</label>
+
+        <P class="pwhite">*: campo obligatorio.</P>
+
+        <div class="button_group">
+            <input type="submit" value="Iniciar afiliación">
+            <input type="reset">
+        </div>
+
+    </form>
+</body>
+
+</html>
